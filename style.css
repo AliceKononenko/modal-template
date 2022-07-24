@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DBDCEE;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    position: relative;
+    /*width: 495.55px;
+    height: 779px;*/
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*max-width: 475px;
+    width: 100%;*/
+    max-height: 597px;
+    height: 100%;
+    gap: 2rem 0;
+
+    background: #FFFFFF;
+    
+    border-radius: 24px;
+}
+
+.main::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+
+    transform: rotate(2deg);
+    border: 1px solid white;
+    border-radius: 24px;
+    content: "";
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin: 32px 32px 0px;
+    color: gray;
+    height: 100%;
+    gap: 2rem 0;
+}
+
+.head-title {    
+    font-weight: 700;
+    font-size: 25px;
+    color: #151515;        
+}
+
+.block-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.input-text {
+    color: gray;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.result {
+    color: gray;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    font-size: 18px;
+    text-align: right;
+    background-color: white;
+}
+
+.color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circles {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;  
+    border-radius: 50%;
+    align-items: center;
+}
+
+.circle-mark {
+    background: content-box;
+    clip-path: circle(50%);    
+    border: 1px solid #9797AA;
+    border-radius: 50%;
+    padding: .1em;
+    width: 28px;
+    height: 28px;
+}
+
+.icon-mark {
+    color: white;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin-left: 16px;
+}
+
+.select-n {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #56678942;
+    border-radius: 8px;
+    height: 50px;
+    padding-left: 12px;
+}
+
+.icon-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    width: 335px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: gray;
+}
+
+.icon {
+    color: black;
+    width: 38px;
+    height: 38px;
+    padding-right: 12px;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #56678942;
+    padding: 0 12px;
+    height: 50px;    
+    border-radius: 8px;
+    width: 40%;
+}
+
+.input-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: gray;
+}
+
+.divider {
+    background-color: gray;
+    height: 1px;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.button {
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.cancel {
+    background-color: #F5F7FB;
+    color: #15192080;
+    margin-right: 20px;
+
+}
+
+.save {
+    background-color: #5F65F6;
+    color: #FFFFFF;
+}
