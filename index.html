@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>modal-template</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="main">
+          <div class="content">
+            <div class="head-title">Create New task</div>
+            <div class="block-title">
+              <input
+                class="input-text"
+                placeholder="Title"
+                type="text"
+                size="30"
+                maxlength="100"
+                onkeyup="document.getElementById ('count').value = this.value.length"
+                onblur="document.getElementById ('count').value = this.value.length"
+              />
+
+              <div class="count">
+                <input
+                  class="result"
+                  placeholder="0"
+                  id="count"
+                  size="2"
+                  disabled
+                />/100
+              </div>
+            </div>
+            Click to add Description
+            <div class="color">
+              Label color
+              <div class="circles">
+                <div
+                  class="circle-mark iconify icon-mark"
+                  style="background-color: #878c93"
+                  data-icon="ic:baseline-check"
+                ></div>
+                <div class="circle" style="background-color: #6153cc"></div>
+                <div class="circle" style="background-color: #ff715b"></div>
+                <div class="circle" style="background-color: #151515"></div>
+                <div class="circle" style="background-color: #ffb627"></div>
+              </div>
+            </div>
+            <div class="select-n">
+              <div class="icon-select">
+                <div
+                  class="icon iconify"
+                  data-icon="ic:baseline-person-outline"
+                ></div>
+                <select name="" id="name" class="select">
+                  <option value="" hidden>Select Assignee</option>
+                  <option value="" id="1">1</option>
+                  <option value="" id="2">2</option>
+                  <option value="" id="3">3</option>
+                  <option value="" id="4">4</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calendar">
+              <div class="calendar-block">
+                <div
+                  class="icon iconify"
+                  data-icon="ant-design:calendar-outlined"
+                ></div>
+                <input
+                  class="input-date"
+                  id=""
+                  type="date"
+                  min="01-01-2000"
+                  placeholder="12-05-2021"
+                />
+              </div>
+              <div class="calendar-block">
+                <div
+                  class="icon iconify"
+                  data-icon="ant-design:calendar-outlined"
+                ></div>
+                <input
+                  class="input-date"
+                  id=""
+                  type="date"
+                  min="01-01-2000"
+                  placeholder="12-05-2021"
+                />
+              </div>
+            </div>
+          </div>
+          <hr class="divider" />
+          <div class="buttons">
+            <button class="button cancel">Cancel</button>
+            <button class="button save">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  </body>
+</html>
